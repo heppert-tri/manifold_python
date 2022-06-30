@@ -1,11 +1,11 @@
 install:
-	pip3 -v install -v .
+	python -m pip -v install -v .
 
 uninstall:
-	pip3 -v uninstall -y manifold
+	python -m pip -v uninstall -y manifold
 
 test:
-	python3 -m unittest discover -v tests
+	python -m unittest discover -v tests
 
 editable:
-	pip3 -v install -e . && cp build/*/compile_commands.json build/
+	python -m pip -v install -e . && cp build/*/compile_commands.json build/
